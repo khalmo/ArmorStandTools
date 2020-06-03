@@ -189,6 +189,7 @@ abstract class NMS {
 
     ArmorStand clone(ArmorStand as) {
         ArmorStand clone = (ArmorStand) as.getWorld().spawnEntity(as.getLocation().add(1, 0, 0), EntityType.ARMOR_STAND);
+//        clone.set
         clone.setGravity(as.hasGravity());
         clone.setHelmet(as.getHelmet());
         clone.setChestplate(as.getChestplate());
